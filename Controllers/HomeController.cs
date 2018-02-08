@@ -25,6 +25,7 @@ namespace Agua.Controllers
             DateTime Hoy = DateTime.Today;
             TimeSpan DiasFaltantes = ProximoCumple - Hoy;
             int BotellasxDias = minutos * 12;
+
             
             int fecha = DiasFaltantes.Days;
             int agua = BotellasxDias * fecha;
