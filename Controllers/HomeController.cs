@@ -24,13 +24,13 @@ namespace Agua.Controllers
 
             DateTime Hoy = DateTime.Today;
             TimeSpan DiasFaltantes = ProximoCumple - Hoy;
-            int BotellasxDias = minutos * 12;
-
+            int Agua = minutos * 12;
+            int Tiempo = DiasFaltantes.Days;
+            int BotellasFaltante = Agua * Tiempo;
             
-            int fecha = DiasFaltantes.Days;
-            int agua = BotellasxDias * fecha;
-            ViewBag.Dias = fecha;
-            ViewBag.Botellas = agua;
+
+            ViewBag.Dias = Tiempo;
+            ViewBag.Botellas = BotellasFaltante;
 
             return View();
         }
