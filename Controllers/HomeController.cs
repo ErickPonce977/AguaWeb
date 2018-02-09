@@ -28,7 +28,6 @@ namespace Agua.Controllers
             int Tiempo = DiasFaltantes.Days;
             int BotellasFaltante = Agua * Tiempo;
             
-
             ViewBag.Dias = Tiempo;
             ViewBag.Botellas = BotellasFaltante;
 
